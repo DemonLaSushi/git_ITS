@@ -1,0 +1,12 @@
+.header{
+    color: rgba(14, 136, 20, 0.904);
+    background-color: transparent;
+    margin:auto;
+    padding: 12px;
+}
+.background{
+    background-image: url(doc/dark_space.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
