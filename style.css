@@ -4,9 +4,11 @@
     margin:auto;
     padding: 12px;
 }
+
 .background{
     background-image: url(doc/dark_space.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
 }
+
