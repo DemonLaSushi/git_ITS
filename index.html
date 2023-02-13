@@ -1,77 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-
-        <title class="header" >Play a game?</title>
+        <title>play a game?</title>
         <link rel="stylesheet" href="style.css">
         <meta charset="utf-8">
         <meta name="viewpoint" content="width=device=width,initial-scale=1">
-        <style>
-
-            .mianav a:hover {
-                background-color: rgba(137, 43, 226, 0.75);
-                color: black;
-            }
-
-        </style>
-        <script>
-            function verificationForm() {
-                if(document.miaform.cognome.value=="")
-                {
-                    alert("Inserisci cognome!");
-                    return false;
-                }
-                if(parseInt(document.miaform.cognome.value)<18) {
-                    alert("Devi essere maggiorenne Dio Porco!");
-                        return false;
-                }
-                return true;
-            }
-        </script>
     </head>
+
     <body class="background">
 
-        <h1 class="header">Want to play a game?</h1><br>
-<br>
-       <div border="1">
-        <tr><td><a name="game1" id="gicon">primo gioco</td></tr>
-       </div>
-<br>
-        <div align="center">
-            <img class="gicon" src="doc/img/Postit-note.png" nome="game1" alt="">
-            <img class="gicon" src="doc/img/Postit-note.png" nome="game1" alt="">
-            <img class="gicon" src="doc/img/Postit-note.png" nome="game1" alt="">
-        </div>
-<br>                
-        <table border="2">
-            <tr><td><a href="https://i.kym-cdn.com/entries/icons/mobile/000/037/984/thiccomniman.jpg">macchine da corsa</a></td><td><a href="https://i.kym-cdn.com/entries/icons/mobile/000/037/984/thiccomniman.jpg">cake</a></td></tr>
+        <table id="header" border="3">
+            <tr>
+                <td>
+                    <img src="doc/img/Postit-note.png" alt="Ups... nada" height="250px" width="320px">
+                </td>
+                <td >
+                    <h1 class="title">Want to play a game?</h1>
+                </td>
+            </tr>
+        </table >
 
+        <table align="center" border="3">
+            <tr>
+                <td align="center">
+                    <img class="gicon" src="doc/img/Postit-note.png" nome="game1" alt="404 img tris"> <br>
+                    <a href="doc/note1/note1.html">: Tris :</a>
+                </td>
+                <td align="center">
+                    <img class="gicon" src="doc/img/Postit-note.png" nome="game1" alt="404 img impic">
+                </td>
+                <td align="center">
+                    <img class="gicon" src="doc/img/Postit-note.png" nome="game1" alt="404 img 50/50">
+                </td>
+            </tr>
         </table>
-
-        <!--<form action="">
-            <input type="text" name="cognome" value="Inserire cognome"/><br/>
-            <input type="text" name="nome" value="Inserire nome"/><br/>
-            @sufficente:____:<input type="radio" name="giudizio" value="sufficente"/><br/>
-            @buono:________:<input type="radio" name="giudizio" value="buono"/><br/>
-            @insufficente:__:<input type="radio" name="giudizio" value="insufficente"/><br/>
-            <input name="regione"><br/>
-            <select type="regione">
-            <option name="Lazio" selected>Lazio</option>
-            <option name="Calabria">Calabria</option>
-            <option name="Lcania  ">Lucania</option> 
-            <option name="Luisiana">Luisiana</option>
-            </select><br>
-            <input type="submit">
-        </form> 
-    
-            <form name="miaform" method="get" action="">
-            <p>Modulo di iscrizione</p>
-            <input type="text" name="cognome" placeholder="inserire cognome" autocomplete="off"/><br>
-            <input type="email" name="email" placeholder="inserire email"/><br>
-            <input type="search" name="search" placeholder="inserire search"/><br>
-            <input type="submit" value="invia"/>
-        </form> -->
-
-        <a href="https://i.kym-cdn.com/entries/icons/mobile/000/037/984/thiccomniman.jpg">Whant to see something cute?</a>
+    <br>
+    <br>
+    <br>
+        <a href="https://www.amazon.it/Saw-Legacy-Collection-2021-Blu-ray/dp/B09381B94S/ref=sr_1_1?crid=3UAY4Z580GAF8&keywords=saw+blu+ray+cofanetto&qid=1676144176&sprefix=saw+blu+ray+%2Caps%2C98&sr=8-1">Una parola da i nostri sponsor :)</a>
     </body>
 </html>

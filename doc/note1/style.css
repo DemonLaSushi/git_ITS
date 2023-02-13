@@ -1,7 +1,9 @@
-/*Body style*/
+/*Body style ...
+
+---   Note1   --- */
 
 .background{
-    background-image: url(doc/img/paper.jpg);
+    background-image: url(img_note1/paper.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -23,21 +25,9 @@
     
 }
 
-.titlemenu{
-    align: center;
-    width: 100%;
-
-}
-
 /*Icon selection table*/
 
 .gicon{
     height: 300px;
     width: 300px;
-}
-
-/* <a> link */
-.submit{
-    align-items: center;
-    width: 100%;
 }
