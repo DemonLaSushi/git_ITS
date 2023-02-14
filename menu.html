@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="style.css">
         <meta charset="utf-8">
         <meta name="viewpoint" content="width=device=width,initial-scale=1">
+        <link href="{{< param "cdn.css" >}}" rel="stylesheet" integrity="{{< param "cdn.css_hash" >}}" crossorigin="anonymous">
     </head>
     <body class="background">
         
@@ -22,14 +23,11 @@
 <br>
 <br>
 <br>
-<table class="submit" border="0">
-    <div>
-        <tr align="center">
-        <td>
-            <button id="submit" href="index.html" role="button"> Lets play</button>
-        </td>
-        </tr>
-    </div>
-</table>
+<form action="index.html">
+
+            <botton id="submit" type="submit">
+                 Lets play
+            </botton>
+</form>
 </body>
     </html>

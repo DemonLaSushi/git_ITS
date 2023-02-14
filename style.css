@@ -6,6 +6,11 @@
     background-attachment: fixed;
     background-size: 100% 100%;
 }
+
+@font-face {
+    font-family: saw;
+    src: url();
+}
 /*Headre*/
 .header{
     height: 45%;
@@ -31,11 +36,17 @@
 
 }
 
+.saw{
+    height: 70%;
+    width: 70%;
+}
+
 /*Icon selection table*/
 
 .gicon{
-    height: 300px;
-    width: 300px;
+    align-items: center;
+    height: 90%;
+    width: 90%;
 }
 
 /* <a> link */
