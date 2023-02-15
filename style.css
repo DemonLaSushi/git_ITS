@@ -7,9 +7,29 @@
     background-size: 100% 100%;
 }
 
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.15;
+  }
+
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+
 @font-face {
-    font-family: saw;
-    src: url();
+    font-family: sawFont;
+    src: url(doc/font/SAWesome.ttf);
 }
 /*Headre*/
 .header{
@@ -20,20 +40,20 @@
 
 .title{
     align-items: center;
-    color: rgba(218, 3, 3, 0.934);
+    color: rgba(146, 8, 8, 0.934);
     background-color: transparent;
     margin: 3px;
     padding: 45px;
     font-size: 500%;
-    
+    font-family: sawFont;
 }
 
 .titlemenu{
-    color: red;
+    color: rgba(146, 8, 8, 0.934);
     font-size: 50px;
-    align: center;
     width: 100%;
-
+    font-family: sawFont;
+    place-items: center;
 }
 
 .saw{
@@ -54,3 +74,12 @@
     align-items: center;
     width: 100%;
 }
+
+/*<-- or -->*/
+
+.container{
+        height: 200px;
+        width: 500px;
+        margin-top: 30px;
+        place-items: center;
+    }
