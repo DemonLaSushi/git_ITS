@@ -57,6 +57,14 @@
     place-items: center;
 }
 
+.note2 > h1{
+    color: rgba(146, 8, 8, 0.934);
+    font-size: 50px;
+    width: 100%;
+    font-family: sawFont;
+    place-items: center;
+}
+
 .saw{
     height: 70%;
     width: 70%;
