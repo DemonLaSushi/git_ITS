@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Play Hang Man</title>
+        <link rel="stylesheet" href="style2note.css">
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device=width,initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <video autoplay muted loop id="myVideo">
+            <source src="do" type="video/mp4">
+        </video>
+
+        <div class="content">
+
+            <table id="header">
+                <tr>
+                    <td>
+                        <img src="doc/img/Saw-gif.gif" alt="Ups... nada" class="saw">
+                    </td>
+                    <td >
+                        <h1 class="title">Let's PLAY</h1>
+                    </td>
+                </tr>
+            </table >
+        
+            <a href="menu.html">
+                <img  src="doc/img/arrow-red-l.png" alt="Menu" height=2%; width="2%">
+            </a>
+
+        </div>
+    </body>
+</html>

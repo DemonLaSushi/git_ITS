@@ -1,3 +1,5 @@
+/*index style*/
+
 /*Body style*/
 
 .background{
@@ -14,19 +16,18 @@
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    opacity: 0.15;
+    opacity: 0.2;
   }
 
   .content {
     position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
+    width: auto;
+    height: auto;
   }
   
 
+  
 @font-face {
     font-family: sawFont;
     src: url(doc/font/SAWesome.ttf);
@@ -65,8 +66,8 @@
 
 .gicon{
     align-items: center;
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
 }
 
 /* <a> link */
