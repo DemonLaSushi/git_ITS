@@ -21,9 +21,15 @@
 
   .content {
     position: fixed;
-    color: #f1f1f1;
-    width: auto;
+    width: 100%;
     height: auto;
+  }
+
+  .play-botton{
+    position: fixed;
+    height: auto;
+    width: 25%;
+
   }
   
 
@@ -41,7 +47,7 @@
 
 .title{
     align-items: center;
-    color: rgba(146, 8, 8, 0.934);
+    color: rgba(146, 8, 8);
     background-color: transparent;
     margin: 3px;
     padding: 45px;
@@ -50,7 +56,7 @@
 }
 
 .titlemenu{
-    color: rgba(146, 8, 8, 0.934);
+    color: rgba(146, 8, 8);
     font-size: 50px;
     width: 100%;
     font-family: sawFont;
@@ -58,7 +64,7 @@
 }
 
 .note2 > h1{
-    color: rgba(146, 8, 8, 0.934);
+    color: rgba(146, 8, 8);
     font-size: 50px;
     width: 100%;
     font-family: sawFont;
@@ -87,8 +93,9 @@
 /*<-- or -->*/
 
 .container{
+        color: rgba(146, 8, 8);
         height: 200px;
-        width: 500px;
+        width: 100%;
         margin-top: 30px;
-        place-items: center;
+        align-items: center;
     }
