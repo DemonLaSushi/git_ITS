@@ -188,10 +188,10 @@ window.onload = function () {
   // Play
   play = function () {
     categories =[
-                ["Tarantola", "Mille-piedi", "Calyptra", "Lo-scarrafone"],
-                ["Laguna", "Er Sottotevere", "Tufello", "Anagnina"],
-                ["Australopiteco", "Mesozoico", "Endoclinologo", "Elisabbetta-seconda"],
-                ["Sofia", "Tallin", "Oslo", "Roma", "Parigi", "Brazilia"]
+                ["tarantola", "mille-piedi", "calyptra", "lo-scarrafone"],
+                ["laguna", "er sottotevere", "tufello", "Anagnina"],
+                ["australopiteco", "mesozoico", "endoclinologo", "elisabbetta-seconda"],
+                ["sofia", "tallin", "oslo", "roma", "parigi", "brasilia"]
                 ];
 
     chosenCategory = categories[Math.floor(Math.random() * categories.length)];
