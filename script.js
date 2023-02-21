@@ -1,74 +1,67 @@
-const cellElements = document.querySelectorAll('[data-cell]')
-const X_CLASS = 'x'
-const O_CLASS = 'o'
-let xTurn
+const cellElements = document.querySelectorAll('[data-cell]') //restituisce una lista (?) di elementi cell
+const X_CLASS = 'x' //true
+const O_CLASS = 'o' //false
+let Turn = true;    //comincia x
 
 cellElements.forEach(cell => {
   cell.addEventListener('click', handleClick, { once: true })
 })
 
 function handleClick(e) {
-  const cell = e.target
-  const currentClass = xTurn ? X_CLASS : O_CLASS
-  let markPlaced;
-  markPlaced = placeMark(cell, currentClass)
-  console.log(markPlaced);
+  const cell = e.target;  //seleziona cella
+  const currentClass = Turn ? X_CLASS : O_CLASS;  //x e o in base a turn
+  let markPlaced;  //se il segno in currentClass è stato messo in cell
+  markPlaced = placeMark(cell, currentClass) 
   if (checkWin(currentClass)) {
     endGame(false)
-  } else if (isDraw()) {
+  } else if (checkDraw()) {
     endGame(true)
   } else if(markPlaced){
-    swapTurns()
-    cellElements.forEach(cell => {
-      cell.removeEventListener('click', handleClick)
-      cell.addEventListener('click', handleClick, { once: true })
-    })
+    swapTurns() //se non è stato messo il segno non va cambiato il turno
   }
 }
 
 function placeMark(cell, currentClass) {
   console.log(currentClass);
   if (cell.classList.contains('o')) {
-    alert("c'è già una O!");
     return false;
   }
   else if(cell.classList.contains('x')) {
-    alert("c'è già una X!")
     return false;
-  }
+  } 
   else {
     cell.classList.add(currentClass)
     return true;
-  }
+  }//se può, piazza il segno di currentClass nella cella selezionata
 }
 
 function swapTurns() {
-  xTurn = !xTurn
+  Turn = !Turn;
 }
 
 function checkWin(currentClass) {
   return WINNING_COMBINATIONS.some(combination => {
     return combination.every(index => {
       return cellElements[index].classList.contains(currentClass)
-    })
+    }) //controlla se le combinazioni vincenti contengono currentClass
   })
 }
 
-function isDraw() {
+function checkDraw() {
   return [...cellElements].every(cell => {
     return cell.classList.contains(X_CLASS) || cell.classList.contains(O_CLASS)
-  })
+  }) //se ogni casella è piena deve essere un pareggio
 }
 
 function endGame(draw) {
   if (draw) {
-    alert('Draw!')
+    alert('Pareggio!')
   } else {
-    alert(`${xTurn ? "X's" : "O's"} wins!`)
+    alert(`Vince ${Turn ? "X" : "O"}!`)
   }
   cellElements.forEach(cell => {
     cell.removeEventListener('click', handleClick)
-  })
+  }) //rimuove interattività
 }
 
 const WINNING_COMBINATIONS = [
@@ -80,4 +73,4 @@ const WINNING_COMBINATIONS = [
   [2, 5, 8],
   [0, 4, 8],
   [2, 4, 6]
-]
+] //combinazioni vincenti da usare su cellElements 
