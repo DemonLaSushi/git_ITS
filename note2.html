@@ -5,17 +5,18 @@
         <link rel="stylesheet" href="style2note.css">
         <meta charset="utf-8">
         <meta name="viewpoint" content="width=device=width,initial-scale=1">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        
+        <script src="jshangtry.js"></script>
+        
+        
         
     </head>
     <body class="background">
-        <video autoplay muted loop id="myVideo">
-            <source src="doc/img/static1.mp4" type="video/mp4">
-        </video>
-
+        
+        
         <div class="content">
 
-            <table id="header">
+            <table id="header" border="0">
                 <tr>
                     <td>
                         <img src="doc/img/Saw-gif.gif" alt="Ups... nada" class="saw">
@@ -24,28 +25,38 @@
                         <h1 class="title">Let's PLAY: l'impiccato</h1>
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <div class="wrapper">
+                            <p id="mylives"></p>
+                            <!--<p id="clue">Clue -</p> on v2-->
+                            <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+                            <div class="container">
+                            <button id="reset">End Game</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrapper">
+                            <p id="catagoryName" ></p>
+                        </div>
+                            <br>
+                        <div>
+                            <div id="hold"></div>
+                        </div>
+                    </td>
+                </tr>
             </table >
-
-            <div class="wrapper">
-
+                <br>
+                <br>
                 <div id="buttons">
-                </div>  
-                <p id="catagoryName"></p>
-                <div id="hold">
-                </div>
-                <p id="mylives"></p>
-  
-                <div class="container">
-                  <button id="reset">Play again</button>
-                </div>
+                </div> 
 
-            </div>
             
         
-            <a href="menu.html">
-                <img  src="doc/img/arrow-red-l.png" alt="Menu" height=5%; width="5%">
+            <a href="index.html">
+                <img  src="doc/img/arrow-red-l.png" alt="Menu" height=3%; width="3%">
             </a>
-
         </div>
     </body>
 </html>
