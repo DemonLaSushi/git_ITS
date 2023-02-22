@@ -9,8 +9,6 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  overflow: hidden;
-
 }
 
 .title{
@@ -265,4 +263,11 @@ p{
     text-decoration: none;
     color: red;
     font-size: 5rem;
+  }
+
+  .reload {
+    cursor: pointer;
+    position: relative;
+    height:50px;
+    width:100px;
   }
