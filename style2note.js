@@ -6,7 +6,6 @@ window.onload = function () {
   
   var categories;         // Array of topics
   var chosenCategory;     // Selected catagory
-  var getHint ;          // Word getHint
   var word ;              // Selected word
   var guess ;             // Geuss
   var geusses = [ ];      // Stored geusses
@@ -17,10 +16,6 @@ window.onload = function () {
   // Get elements
   var showLives = document.getElementById("mylives");
   var showCatagory = document.getElementById("scatagory");
-  
-  var showClue = document.getElementById("clue");
-
-
 
   // create alphabet ul
   var buttons = function () {
@@ -44,7 +39,7 @@ window.onload = function () {
     if (chosenCategory === categories[0]) {
       catagoryName.innerHTML = "Il tema è: Insetti";
     } else if (chosenCategory === categories[1]) {
-      catagoryName.innerHTML = "Il tema è: Luoghi";
+      catagoryName.innerHTML = "Il tema è: Luoghi a Roma";
     } else if (chosenCategory === categories[2]) {
       catagoryName.innerHTML = "Il tema è: ¿J?";
     } else if (chosenCategory === categories[3]) {
@@ -185,13 +180,13 @@ window.onload = function () {
   }
   
     
-  // Play
+  // Play - selezione categoria e parola 
   play = function () {
     categories =[
-                ["tarantola", "mille-piedi", "calyptra", "lo-scarrafone"],
-                ["laguna", "er sottotevere", "tufello", "Anagnina"],
-                ["australopiteco", "mesozoico", "endoclinologo", "elisabbetta-seconda"],
-                ["sofia", "tallin", "oslo", "roma", "parigi", "brasilia"]
+                ["tarantola", "mille-piedi", "calyptra", "lo-scarrafone", "pantegana"],
+                ["laguna", "er sottotevere", "tufello", "anagnina", "tor-bellamonaca"],
+                ["australopiteco", "mesozoico", "endocrinologo", "elisabbetta-seconda"],
+                ["sofia", "tallin", "oslo", "roma", "parigi", "brasilia", "avellino"]
                 ];
 
     chosenCategory = categories[Math.floor(Math.random() * categories.length)];
